@@ -14,7 +14,7 @@ const LoginPage = () => {
     const logIn = async () => {
         try{
             await signInWithEmailAndPassword(getAuth(), email, password);
-            navigate('/atricles');
+            navigate('/articles');
         } catch(e) {
             setError(e.message);
         }
